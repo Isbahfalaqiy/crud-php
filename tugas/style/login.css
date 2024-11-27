@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  background: linear-gradient(135deg, #6e7c7c, #a5c6d8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #5a9bcf;
+  font-weight: 600;
+}
+
+/* Wrapper to Center Form */
+.wrapper {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 40px 30px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center; /* Center the text */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #5a9bcf;
+  box-shadow: 0 0 10px rgba(90, 156, 207, 0.3);
+}
+
+/* Submit Button */
+input[type="submit"] {
+  width: 100%;
+  padding: 14px 18px;
+  background-color: #5a9bcf;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a88b0;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #5a9bcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Footer Section */
+#formFooter {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+#formFooter a {
+  color: #5a9bcf;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#formFooter a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+
+  #icon {
+    font-size: 20px;
+  }
+}
